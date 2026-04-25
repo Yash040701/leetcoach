@@ -24,10 +24,13 @@ async function sendMessage() {
 
   try {
     const res = await fetch(HF_API, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ data: [problem] })
-    });
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    data: [problem],
+    fn_index: 0
+  })
+});
     const data = await res.json();
     // remove the "thinking" placeholder
     const chat = document.getElementById("chat");
