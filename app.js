@@ -1,5 +1,5 @@
 // Replace with your actual HF Space URL
-const HF_API = "https://YOUR_USERNAME-leetcoach.hf.space/run/predict";
+const HF_API = "https://Yash0407-leetcoach.hf.space/run/predict";
 
 function addMessage(role, text) {
   const chat = document.getElementById("chat");
