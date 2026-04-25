@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LeetCoach</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>LeetCoach</h1>
+      <p>Describe your LeetCode problem — get a hint, not a solution.</p>
+    </header>
+    <div class="chat-box" id="chat"></div>
+    <div class="input-row">
+      <textarea id="input" placeholder="e.g. I need to find the longest substring without repeating characters. I'm using brute force with two loops..." rows="3"></textarea>
+      <button id="send-btn" onclick="sendMessage()">Get Hint</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
